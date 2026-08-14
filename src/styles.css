@@ -33,7 +33,7 @@
 .device-tablet{position:absolute;width:38%;right:-1%;bottom:2%;padding:8px;background:linear-gradient(145deg,#30383b,#0c1113);border-radius:19px;box-shadow:0 26px 55px rgba(7,23,29,.35);z-index:3}
 .device-tablet .device-display{height:265px;border-radius:12px}
 .device-tablet .device-display img{object-position:70% center}
-.device-phone{position:absolute;width:20%;left:3%;bottom:0;padding:18px 6px 7px;background:linear-gradient(145deg,#30383b,#080c0e);border-radius:22px;box-shadow:0 24px 48px rgba(7,23,29,.38);z-index:4}
+.device-phone{position:absolute;width:21%;left:2%;bottom:1%;padding:18px 6px 7px;background:linear-gradient(145deg,#30383b,#080c0e);border-radius:22px;box-shadow:0 24px 48px rgba(7,23,29,.38);z-index:4}
 .device-phone .device-display{height:250px;border-radius:15px}
 .device-phone .device-display img{object-position:10% center}
 .phone-speaker{position:absolute;top:8px;left:38%;width:24%;height:3px;border-radius:3px;background:#606a6d}
