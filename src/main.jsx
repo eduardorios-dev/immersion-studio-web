@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { ArrowDown, ArrowRight, Building2, Camera, Check, ChevronRight, Globe2, Hotel, Layers3, Menu, MonitorSmartphone, Play, Sparkles, TabletSmartphone, X } from 'lucide-react';
+import { ArrowDown, ArrowRight, BriefcaseBusiness, Building2, CalendarDays, Camera, Check, Globe2, Hotel, House, Layers3, MapPinned, Menu, MonitorSmartphone, Play, Sparkles, TabletSmartphone, X } from 'lucide-react';
 import './styles.css';
 
 const plans = [
@@ -10,12 +10,12 @@ const plans = [
 ];
 
 const sectors = [
-  ['Hoteles y resorts','Habitaciones, amenidades, restaurantes y experiencias.'],
-  ['Venues y eventos','Salones, jardines, terrazas y espacios complementarios.'],
-  ['Haciendas y quintas','Propiedades amplias con múltiples áreas por descubrir.'],
-  ['Desarrollos inmobiliarios','Modelos, departamentos muestra, amenidades y entorno.'],
-  ['Espacios turísticos','Destinos, cabañas y propiedades vacacionales.'],
-  ['Proyectos corporativos','Campus, clubes, hospitales y espacios de gran escala.']
+  ['Hoteles y resorts','Habitaciones, amenidades, restaurantes y experiencias.',Hotel],
+  ['Venues y eventos','Salones, jardines, terrazas y espacios complementarios.',CalendarDays],
+  ['Haciendas y quintas','Propiedades amplias con múltiples áreas por descubrir.',House],
+  ['Desarrollos inmobiliarios','Modelos, departamentos muestra, amenidades y entorno.',Building2],
+  ['Espacios turísticos','Destinos, cabañas y propiedades vacacionales.',MapPinned],
+  ['Proyectos corporativos','Campus, clubes, hospitales y espacios de gran escala.',BriefcaseBusiness]
 ];
 
 function App(){
@@ -40,7 +40,7 @@ function App(){
 
       <section className="device-band"><div><Globe2/><h3>Web</h3><p>Enlace directo o integrado en tu sitio.</p></div><div><TabletSmartphone/><h3>Móvil y tablet</h3><p>Una experiencia adaptada a cada pantalla.</p></div><div><MonitorSmartphone/><h3>Realidad virtual</h3><p>Presentaciones, exposiciones y usos inmersivos.</p></div></section>
 
-      <section className="applications section" id="aplicaciones"><div className="section-label">04 / APLICACIONES</div><div className="split-head"><h2>Una experiencia para cada tipo de espacio.</h2><p>Soluciones flexibles para hospitality, eventos, real estate y proyectos de mayor escala.</p></div><div className="sector-grid">{sectors.map((s,i)=><article key={s[0]}><span>{String(i+1).padStart(2,'0')}</span>{i===0?<Hotel/>:i===3?<Building2/>:<ChevronRight/>}<h3>{s[0]}</h3><p>{s[1]}</p></article>)}</div></section>
+        <section className="applications section" id="aplicaciones"><div className="section-label">04 / APLICACIONES</div><div className="split-head"><h2>Una experiencia para cada tipo de espacio.</h2><p>Soluciones flexibles para hospitality, eventos, real estate y proyectos de mayor escala.</p></div><div className="sector-grid">{sectors.map((s,i)=>{const Icon=s[2];return <article key={s[0]}><span>{String(i+1).padStart(2,'0')}</span><Icon/><h3>{s[0]}</h3><p>{s[1]}</p></article>})}</div></section>
 
       <section className="projects dark section" id="proyectos"><div className="section-label">05 / PROYECTOS</div><div className="split-head"><h2>Proyectos Immersion.</h2><p>Una selección inicial de experiencias y producciones. Esta sección crecerá con cada nuevo proyecto.</p></div><div className="project-card"><div className="project-art"><div className="sun"/><div className="wall w1"/><div className="wall w2"/><div className="pool"/></div><div className="project-info"><small>HOTEL · MÉRIDA, YUCATÁN</small><h3>Casa Loreto</h3><p>Experiencia virtual para presentar habitaciones, espacios comunes y la identidad de la propiedad.</p><span className="text-link">Experiencia en preparación <ArrowRight/></span></div></div></section>
 
