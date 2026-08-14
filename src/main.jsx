@@ -22,7 +22,7 @@ function App(){
   const [open,setOpen]=React.useState(false);
   const close=()=>setOpen(false);
   return <>
-    <header className="nav"><a className="brand" href="#top" aria-label="Immersion Studio inicio"><span className="brand-mark">I</span><span>IMMERSION<small>STUDIO</small></span></a><button className="menu" onClick={()=>setOpen(!open)} aria-label="Abrir menú">{open?<X/>:<Menu/>}</button><nav className={open?'open':''}><a onClick={close} href="#soluciones">Soluciones</a><a onClick={close} href="#aplicaciones">Aplicaciones</a><a onClick={close} href="#proyectos">Proyectos</a><a onClick={close} href="#planes">Planes</a><a onClick={close} className="nav-cta" href="#contacto">Solicitar demo</a></nav></header>
+    <header className="nav"><a className="brand" href="#top" aria-label="Immersion Studio inicio"><img src="/logo-immersion.png" alt="Immersion Studio"/></a><button className="menu" onClick={()=>setOpen(!open)} aria-label="Abrir menú">{open?<X/>:<Menu/>}</button><nav className={open?'open':''}><a onClick={close} href="#soluciones">Soluciones</a><a onClick={close} href="#aplicaciones">Aplicaciones</a><a onClick={close} href="#proyectos">Proyectos</a><a onClick={close} href="#planes">Planes</a><a onClick={close} className="nav-cta" href="#contacto">Solicitar demo</a></nav></header>
 
     <main id="top">
       <section className="hero dark">
@@ -52,7 +52,7 @@ function App(){
 
       <section className="cta" id="contacto"><div><p className="eyebrow">EMPECEMOS UN PROYECTO</p><h2>Convierte tus espacios en una experiencia interactiva.</h2></div><a className="button light" href="mailto:hola@immersion.mx">Solicitar una demo <ArrowRight/></a></section>
     </main>
-    <footer><a className="brand footer-brand" href="#top"><span className="brand-mark">I</span><span>IMMERSION<small>STUDIO</small></span></a><div><a href="mailto:hola@immersion.mx">hola@immersion.mx</a><p>Monterrey, México</p></div><p>© {new Date().getFullYear()} Immersion Studio</p></footer>
+    <footer><a className="brand footer-brand" href="#top"><img src="/logo-immersion.png" alt="Immersion Studio"/></a><div><a href="mailto:hola@immersion.mx">hola@immersion.mx</a><p>Monterrey, México</p></div><p>© {new Date().getFullYear()} Immersion Studio</p></footer>
   </>
 }
 
