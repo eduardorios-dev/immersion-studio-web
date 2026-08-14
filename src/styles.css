@@ -42,3 +42,7 @@
 @media(max-width:900px){.catalog-devices{margin:2rem 0 0}}
 @media(max-width:900px){.device-showcase{margin:2rem 0 0;min-height:540px}.device-laptop{width:90%;right:0}.device-laptop .device-display{height:350px}}
 @media(max-width:560px){.device-showcase{min-height:390px}.device-laptop{width:96%;padding:7px;top:4%}.device-laptop .device-display{height:235px}.laptop-base{bottom:-12px;height:12px}.device-tablet{width:43%;right:0;padding:5px;border-radius:12px}.device-tablet .device-display{height:165px;border-radius:8px}.device-phone{width:24%;left:2%;padding:13px 4px 5px;border-radius:15px}.device-phone .device-display{height:155px;border-radius:10px}}
+.projects-head{margin-bottom:4rem}
+.project-art img{display:block;width:100%;height:100%;min-height:560px;object-fit:cover;object-position:center}
+@media(max-width:900px){.project-art img{min-height:420px}}
+@media(max-width:560px){.project-art img{min-height:330px}}
