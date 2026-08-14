@@ -68,3 +68,9 @@
 .portfolio-meta svg{width:15px}
 @media(max-width:900px){.portfolio-grid{grid-template-columns:1fr}.portfolio-image{height:480px}}
 @media(max-width:560px){.portfolio-nav nav{display:flex;position:static;width:auto;background:none;padding:0;flex-direction:row}.portfolio-nav nav>a:first-child{display:none}.portfolio-hero{padding:150px 22px 5rem;min-height:520px}.portfolio-hero h1{font-size:3.8rem}.portfolio-content{padding:3rem 22px 6rem}.portfolio-grid{gap:3.5rem}.portfolio-image{height:260px}.portfolio-filters{margin-bottom:3rem}}
+.commercial-copy{position:relative}
+.vr-visual{position:relative;width:min(430px,78%);margin:2rem auto -4rem;isolation:isolate}
+.vr-visual img{display:block;width:100%;height:auto;position:relative;z-index:1;filter:drop-shadow(0 28px 34px rgba(0,0,0,.48))}
+.vr-glow{position:absolute;inset:20% 12%;background:var(--cyan);opacity:.15;filter:blur(65px);border-radius:50%}
+@media(max-width:900px){.vr-visual{width:min(380px,70%);margin:1rem auto 3rem}}
+@media(max-width:560px){.vr-visual{width:88%;margin:1rem auto 2.5rem}}
