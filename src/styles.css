@@ -18,5 +18,9 @@
 .tablet-screen{height:270px;border-radius:10px;background-position:68% center!important;overflow:hidden}
 .phone{z-index:3}
 .phone-screen.platform-preview{background-position:8% center!important}
+.catalog-devices{position:relative;align-self:center;margin-right:-4vw}
+.catalog-devices:before{content:'';position:absolute;inset:12% 8% 3% 5%;background:#d69f3a;filter:blur(80px);opacity:.12;pointer-events:none}
+.catalog-devices img{display:block;position:relative;width:100%;height:auto;object-fit:contain;filter:drop-shadow(0 35px 45px rgba(0,0,0,.25))}
 @media(max-width:560px){.brand img{width:92px;height:68px}.nav nav{top:92px}}
 @media(max-width:560px){.tablet{width:48%;right:0}.tablet-screen{height:205px}.device-tag{font-size:.4rem}}
+@media(max-width:900px){.catalog-devices{margin:2rem 0 0}}
