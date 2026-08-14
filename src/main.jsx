@@ -18,6 +18,27 @@ const sectors = [
   ['Proyectos corporativos','Campus, clubes, hospitales y espacios de gran escala.',BriefcaseBusiness]
 ];
 
+const portfolioProjects = [
+  {name:'Casa Loreto 1893', client:'Hotel boutique', location:'Mérida, Yucatán', type:'Plataforma interactiva', kind:'platform', image:'/projects/casa-loreto.jpg', url:'https://casaloreto1893.netlify.app/'},
+  {name:'Quinta Montes Molina', client:'Quinta y venue', location:'Mérida, Yucatán', type:'Plataforma interactiva', kind:'platform', image:'/projects/quinta-montes-molina.jpg', url:'https://quintamm.netlify.app/'},
+  {name:'Bosques de Monterreal', client:'Mountain resort', location:'Arteaga, Coahuila', type:'Plataforma interactiva', kind:'platform', image:'/projects/bosques-monterreal.jpg', url:'https://monterreal.netlify.app/'},
+  {name:'Las Nubes Eventos', client:'Salones y jardines', location:'Santiago, Nuevo León', type:'Plataforma interactiva', kind:'platform', image:'/projects/las-nubes.jpg', url:'https://nubeseventos.netlify.app/'},
+  {name:'Quinta Villa de Cristo', client:'Quinta para eventos', location:'Santiago, Nuevo León', type:'Recorrido 360°', kind:'tour', image:'/projects/villa-de-cristo.jpg', url:'https://kuula.co/share/collection/7Mm9d?logo=0&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1'},
+  {name:'Quinta Campestre Osmar', client:'Quinta para eventos', location:'Cadereyta, Nuevo León', type:'Recorrido 360°', kind:'tour', image:'/projects/quinta-osmar.jpg', url:'https://kuula.co/share/collection/7MZqW?logo=0&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1'},
+  {name:'Salón Jardín', client:'Las Nubes Eventos', location:'Santiago, Nuevo León', type:'Recorrido 360°', kind:'tour', image:'/projects/salon-jardin.jpg', url:'https://kuula.co/share/collection/7DQrP?logo=1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1'},
+  {name:'Salón Nubes', client:'Las Nubes Eventos', location:'Santiago, Nuevo León', type:'Recorrido 360°', kind:'tour', image:'/projects/salon-nubes.jpg', url:'https://kuula.co/share/collection/7DrL4?logo=1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1'},
+  {name:'Cabaña Yellowstone', client:'Bosques de Monterreal', location:'Arteaga, Coahuila', type:'Recorrido 360°', kind:'tour', image:'/projects/cabana-yellowstone.jpg', url:'https://kuula.co/share/collection/7T0bn?logo=1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1'},
+  {name:'Spa', client:'Bosques de Monterreal', location:'Arteaga, Coahuila', type:'Recorrido 360°', kind:'tour', image:'/projects/spa-monterreal.jpg', url:'https://kuula.co/share/collection/7T0Hs?logo=1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1'},
+  {name:'Habitación Master', client:'Casa Loreto 1893', location:'Mérida, Yucatán', type:'Recorrido 360°', kind:'tour', image:'/projects/habitacion-master.jpg', url:'https://kuula.co/share/collection/7TpqS?logo=1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1'},
+  {name:'Oficinas', client:'Las Nubes Eventos', location:'Santiago, Nuevo León', type:'Recorrido 360°', kind:'tour', image:'/projects/oficinas-las-nubes.jpg', url:'https://kuula.co/share/collection/7TXlk?logo=1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1'}
+];
+
+function Portfolio(){
+  const [filter,setFilter]=React.useState('all');
+  const visible=filter==='all'?portfolioProjects:portfolioProjects.filter(project=>project.kind===filter);
+  return <><header className="nav portfolio-nav"><a className="brand" href="/" aria-label="Volver a Immersion Studio"><img src="/logo-immersion.png" alt="Immersion Studio"/></a><nav><a href="/">Inicio</a><a className="nav-cta" href="/#contacto">Solicitar demo</a></nav></header><main className="portfolio-page"><section className="portfolio-hero dark"><p className="eyebrow">PROYECTOS IMMERSION</p><h1>Conoce algunos de nuestros proyectos.</h1><p>Una selección de experiencias virtuales, plataformas interactivas y recorridos 360° creados para distintos tipos de espacios.</p></section><section className="portfolio-content"><div className="portfolio-filters" aria-label="Filtrar proyectos"><button className={filter==='all'?'active':''} onClick={()=>setFilter('all')}>Todos</button><button className={filter==='platform'?'active':''} onClick={()=>setFilter('platform')}>Plataformas interactivas</button><button className={filter==='tour'?'active':''} onClick={()=>setFilter('tour')}>Recorridos 360°</button></div><div className="portfolio-grid">{visible.map(project=><a className="portfolio-card" href={project.url} target="_blank" rel="noreferrer" key={`${project.client}-${project.name}`}><div className="portfolio-image"><img src={project.image} alt={`${project.name}, ${project.client}`}/><span>{project.type}</span></div><div className="portfolio-meta"><small>{project.client} · {project.location}</small><h2>{project.name}</h2><span>Explorar proyecto <ArrowRight/></span></div></a>)}</div></section><section className="cta"><div><p className="eyebrow">EMPECEMOS UN PROYECTO</p><h2>¿Quieres presentar tus espacios de esta manera?</h2></div><a className="button light" href="mailto:hola@immersion.mx">Solicitar una demo <ArrowRight/></a></section></main></>
+}
+
 function App(){
   const [open,setOpen]=React.useState(false);
   const close=()=>setOpen(false);
@@ -42,7 +63,7 @@ function App(){
 
         <section className="applications section" id="aplicaciones"><div className="section-label">04 / APLICACIONES</div><div className="split-head"><h2>Una experiencia para cada tipo de espacio.</h2><p>Soluciones flexibles para hospitality, eventos, real estate y proyectos de mayor escala.</p></div><div className="sector-grid">{sectors.map((s,i)=>{const Icon=s[2];return <article key={s[0]}><span>{String(i+1).padStart(2,'0')}</span><Icon/><h3>{s[0]}</h3><p>{s[1]}</p></article>})}</div></section>
 
-        <section className="projects dark section" id="proyectos"><div className="section-label">05 / PROYECTOS</div><div className="split-head projects-head"><h2>Proyectos Immersion.</h2></div><div className="project-card"><div className="project-art"><img src="/casa-loreto.jpg" alt="Experiencia virtual 360° de Casa Loreto 1893"/></div><div className="project-info"><small>HOTEL · MÉRIDA, YUCATÁN</small><h3>Casa Loreto</h3><p>Experiencia virtual para presentar habitaciones, espacios comunes y la identidad de la propiedad.</p><a className="text-link" href="https://casaloreto1893.netlify.app/" target="_blank" rel="noreferrer">Ver experiencia 360° <ArrowRight/></a></div></div></section>
+        <section className="projects dark section" id="proyectos"><div className="section-label">05 / PROYECTOS</div><div className="split-head projects-head"><h2>Proyectos Immersion.</h2><a className="button ghost" href="/proyectos">Ver proyectos <ArrowRight/></a></div><div className="project-card"><div className="project-art"><img src="/casa-loreto.jpg" alt="Experiencia virtual 360° de Casa Loreto 1893"/></div><div className="project-info"><small>HOTEL · MÉRIDA, YUCATÁN</small><h3>Casa Loreto</h3><p>Experiencia virtual para presentar habitaciones, espacios comunes y la identidad de la propiedad.</p><a className="text-link" href="https://casaloreto1893.netlify.app/" target="_blank" rel="noreferrer">Ver experiencia 360° <ArrowRight/></a></div></div></section>
 
       <section className="pricing section" id="planes"><div className="section-label">06 / PLANES</div><div className="split-head"><h2>Una solución para cada proyecto.</h2><p>Elige un punto de partida. Cada experiencia puede adaptarse a tus espacios, contenidos y objetivos.</p></div><div className="plans">{plans.map(p=><article className={p.featured?'featured':''} key={p.name}>{p.featured&&<span className="recommended">MÁS COMPLETO</span>}<small>{p.tag}</small><h3>{p.name}</h3><p>{p.intro}</p><ul>{p.items.map(x=><li key={x}><Check/>{x}</li>)}</ul><a href="#contacto">Solicitar cotización <ArrowRight/></a></article>)}</div><p className="custom">¿Necesitas algo diferente? <b>Desarrollamos soluciones personalizadas según el proyecto.</b></p></section>
 
@@ -56,4 +77,4 @@ function App(){
   </>
 }
 
-createRoot(document.getElementById('root')).render(<App/>);
+createRoot(document.getElementById('root')).render(window.location.pathname.startsWith('/proyectos')?<Portfolio/>:<App/>);
