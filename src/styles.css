@@ -11,4 +11,12 @@
 .xp-scene.hero-tour{background-image:linear-gradient(180deg,transparent 50%,rgba(4,16,20,.72) 100%),url('/hero-recorrido.jpg');background-size:cover;background-position:center}
 .hero-tour .h1{left:50%;top:58%}
 .hero-tour .h2{right:18%;top:35%}
+.platform-preview{background-image:linear-gradient(180deg,rgba(0,0,0,.04),rgba(0,0,0,.18)),url('/plataforma-monterreal.jpg')!important;background-size:cover!important;position:relative}
+.screen.platform-preview{background-position:center!important}
+.device-tag{position:absolute;left:14px;top:14px;padding:.4rem .55rem;border-radius:2rem;background:rgba(3,13,16,.78);color:#e8c078;font-size:.48rem;letter-spacing:.14em;backdrop-filter:blur(8px)}
+.tablet{position:absolute;width:44%;right:-2%;bottom:2%;padding:7px;background:#18272b;border-radius:16px;box-shadow:0 28px 55px rgba(0,0,0,.28);z-index:2}
+.tablet-screen{height:270px;border-radius:10px;background-position:68% center!important;overflow:hidden}
+.phone{z-index:3}
+.phone-screen.platform-preview{background-position:8% center!important}
 @media(max-width:560px){.brand img{width:92px;height:68px}.nav nav{top:92px}}
+@media(max-width:560px){.tablet{width:48%;right:0}.tablet-screen{height:205px}.device-tag{font-size:.4rem}}
