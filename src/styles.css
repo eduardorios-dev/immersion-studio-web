@@ -21,6 +21,24 @@
 .catalog-devices{position:relative;align-self:center;margin-right:-4vw}
 .catalog-devices:before{content:'';position:absolute;inset:12% 8% 3% 5%;background:#d69f3a;filter:blur(80px);opacity:.12;pointer-events:none}
 .catalog-devices img{display:block;position:relative;width:100%;height:auto;object-fit:contain;filter:drop-shadow(0 35px 45px rgba(0,0,0,.25))}
+.device-showcase{position:relative;min-height:570px;align-self:center;margin-right:-3vw}
+.showcase-glow{position:absolute;width:70%;height:55%;right:8%;top:17%;background:#d8a84c;filter:blur(110px);opacity:.14;border-radius:50%}
+.device-display{overflow:hidden;background:#080b09}
+.device-display img{display:block;width:100%;height:100%;object-fit:cover}
+.device-laptop{position:absolute;width:86%;right:3%;top:8%;padding:11px 11px 14px;background:linear-gradient(145deg,#30383b,#0c1113);border-radius:18px 18px 7px 7px;box-shadow:0 35px 70px rgba(7,23,29,.28);z-index:1}
+.device-laptop .device-display{height:380px;border-radius:8px}
+.device-laptop .device-display img{object-position:center}
+.device-camera{position:absolute;top:5px;left:50%;width:4px;height:4px;border-radius:50%;background:#657176}
+.laptop-base{position:absolute;left:-6%;right:-6%;bottom:-18px;height:18px;background:linear-gradient(#aeb6b5,#707978);clip-path:polygon(2% 0,98% 0,100% 58%,94% 100%,6% 100%,0 58%);border-radius:0 0 10px 10px}
+.device-tablet{position:absolute;width:38%;right:-1%;bottom:2%;padding:8px;background:linear-gradient(145deg,#30383b,#0c1113);border-radius:19px;box-shadow:0 26px 55px rgba(7,23,29,.35);z-index:3}
+.device-tablet .device-display{height:265px;border-radius:12px}
+.device-tablet .device-display img{object-position:70% center}
+.device-phone{position:absolute;width:20%;left:3%;bottom:0;padding:18px 6px 7px;background:linear-gradient(145deg,#30383b,#080c0e);border-radius:22px;box-shadow:0 24px 48px rgba(7,23,29,.38);z-index:4}
+.device-phone .device-display{height:250px;border-radius:15px}
+.device-phone .device-display img{object-position:10% center}
+.phone-speaker{position:absolute;top:8px;left:38%;width:24%;height:3px;border-radius:3px;background:#606a6d}
 @media(max-width:560px){.brand img{width:92px;height:68px}.nav nav{top:92px}}
 @media(max-width:560px){.tablet{width:48%;right:0}.tablet-screen{height:205px}.device-tag{font-size:.4rem}}
 @media(max-width:900px){.catalog-devices{margin:2rem 0 0}}
+@media(max-width:900px){.device-showcase{margin:2rem 0 0;min-height:540px}.device-laptop{width:90%;right:0}.device-laptop .device-display{height:350px}}
+@media(max-width:560px){.device-showcase{min-height:390px}.device-laptop{width:96%;padding:7px;top:4%}.device-laptop .device-display{height:235px}.laptop-base{bottom:-12px;height:12px}.device-tablet{width:43%;right:0;padding:5px;border-radius:12px}.device-tablet .device-display{height:165px;border-radius:8px}.device-phone{width:24%;left:2%;padding:13px 4px 5px;border-radius:15px}.device-phone .device-display{height:155px;border-radius:10px}}
