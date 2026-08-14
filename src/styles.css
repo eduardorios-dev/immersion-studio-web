@@ -8,4 +8,7 @@
 .brand{gap:0}
 .brand img{display:block;width:106px;height:78px;object-fit:contain}
 .footer-brand img{width:150px;height:auto}
+.xp-scene.hero-tour{background-image:linear-gradient(180deg,transparent 50%,rgba(4,16,20,.72) 100%),url('/hero-recorrido.jpg');background-size:cover;background-position:center}
+.hero-tour .h1{left:50%;top:58%}
+.hero-tour .h2{right:18%;top:35%}
 @media(max-width:560px){.brand img{width:92px;height:68px}.nav nav{top:92px}}
