@@ -71,6 +71,6 @@
 .commercial-copy{position:relative}
 .commercial-side{display:flex;flex-direction:column;gap:1.2rem}
 .commercial-vr-photo{height:320px;overflow:hidden;border:1px solid #2d4349;background:#0b1d23}
-.commercial-vr-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.commercial-vr-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 40%;transform:scale(1.025)}
 @media(max-width:900px){.commercial-vr-photo{height:min(56vw,420px)}}
 @media(max-width:560px){.commercial-vr-photo{height:250px}}
