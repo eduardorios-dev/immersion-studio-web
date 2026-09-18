@@ -19,18 +19,24 @@ const sectors = [
 ];
 
 const portfolioProjects = [
+  {name:'Santa Theresa Residencial', client:'Desarrollo residencial', location:'Santiago, Nuevo León', type:'Plataforma interactiva', kind:'platform', image:'/projects/santa-theresa-residencial.png', url:'https://santa-theresa-tour.netlify.app/'},
+  {name:'Adoro Hotel Boutique', client:'Hotel boutique', location:'Mérida, Yucatán', type:'Plataforma interactiva', kind:'platform', image:'/projects/adoro-plataforma.png', url:'https://adoro-hotel-360.netlify.app/'},
   {name:'Casa Loreto 1893', client:'Hotel boutique', location:'Mérida, Yucatán', type:'Plataforma interactiva', kind:'platform', image:'/projects/casa-loreto.jpg', url:'https://casaloreto1893.netlify.app/'},
-  {name:'Quinta Montes Molina', client:'Quinta y venue', location:'Mérida, Yucatán', type:'Plataforma interactiva', kind:'platform', image:'/projects/quinta-montes-molina.jpg', url:'https://quintamm.netlify.app/'},
+  {name:'Quinta Montes Molina', client:'Venue histórico', location:'Mérida, Yucatán', type:'Plataforma interactiva', kind:'platform', image:'/projects/quinta-montes-molina-plataforma.png', url:'https://quintamontesmolina.netlify.app/'},
   {name:'Bosques de Monterreal', client:'Mountain resort', location:'Arteaga, Coahuila', type:'Plataforma interactiva', kind:'platform', image:'/projects/bosques-monterreal.jpg', url:'https://monterreal.netlify.app/'},
   {name:'Las Nubes Eventos', client:'Salones y jardines', location:'Santiago, Nuevo León', type:'Plataforma interactiva', kind:'platform', image:'/projects/las-nubes.jpg', url:'https://nubeseventos.netlify.app/'},
+  {name:'Adoro de noche', client:'Adoro Hotel Boutique', location:'Mérida, Yucatán', type:'Recorrido 360°', kind:'tour', image:'/projects/adoro-noche-360.png', url:'https://kuula.co/share/collection/7TQrc?logo=1&info=0&fs=1&vr=1&gyro=0&thumbs=3'},
+  {name:'Angel Foto Residencial', client:'Estudio fotográfico', location:'Monterrey, Nuevo León', type:'Recorrido 360°', kind:'tour', image:'/projects/angel-foto-residencial.png', url:'https://kuula.co/share/collection/7M8B3?logo=1&card=1&info=0&fs=1&vr=1&gyro=0&thumbs=3'},
   {name:'Quinta Villa de Cristo', client:'Quinta para eventos', location:'Santiago, Nuevo León', type:'Recorrido 360°', kind:'tour', image:'/projects/villa-de-cristo.jpg', url:'https://kuula.co/share/collection/7Mm9d?logo=0&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1'},
   {name:'Quinta Campestre Osmar', client:'Quinta para eventos', location:'Cadereyta, Nuevo León', type:'Recorrido 360°', kind:'tour', image:'/projects/quinta-osmar.jpg', url:'https://kuula.co/share/collection/7MZqW?logo=0&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1'},
   {name:'Salón Jardín', client:'Las Nubes Eventos', location:'Santiago, Nuevo León', type:'Recorrido 360°', kind:'tour', image:'/projects/salon-jardin.jpg', url:'https://kuula.co/share/collection/7DQrP?logo=1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1'},
   {name:'Salón Nubes', client:'Las Nubes Eventos', location:'Santiago, Nuevo León', type:'Recorrido 360°', kind:'tour', image:'/projects/salon-nubes.jpg', url:'https://kuula.co/share/collection/7DrL4?logo=1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1'},
+  {name:'Terraza', client:'Las Nubes Eventos', location:'Santiago, Nuevo León', type:'Recorrido 360°', kind:'tour', image:'/projects/terraza-las-nubes.png', url:'https://kuula.co/share/collection/7MfHP?logo=1&card=1&info=0&fs=1&vr=1&gyro=0&thumbs=3'},
   {name:'Cabaña Yellowstone', client:'Bosques de Monterreal', location:'Arteaga, Coahuila', type:'Recorrido 360°', kind:'tour', image:'/projects/cabana-yellowstone.jpg', url:'https://kuula.co/share/collection/7T0bn?logo=1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1'},
   {name:'Spa', client:'Bosques de Monterreal', location:'Arteaga, Coahuila', type:'Recorrido 360°', kind:'tour', image:'/projects/spa-monterreal.jpg', url:'https://kuula.co/share/collection/7T0Hs?logo=1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1'},
   {name:'Habitación Master', client:'Casa Loreto 1893', location:'Mérida, Yucatán', type:'Recorrido 360°', kind:'tour', image:'/projects/habitacion-master.jpg', url:'https://kuula.co/share/collection/7TpqS?logo=1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1'},
-  {name:'Oficinas', client:'Las Nubes Eventos', location:'Santiago, Nuevo León', type:'Recorrido 360°', kind:'tour', image:'/projects/oficinas-las-nubes.jpg', url:'https://kuula.co/share/collection/7TXlk?logo=1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1'}
+  {name:'Oficinas', client:'Las Nubes Eventos', location:'Santiago, Nuevo León', type:'Recorrido 360°', kind:'tour', image:'/projects/oficinas-las-nubes.jpg', url:'https://kuula.co/share/collection/7TXlk?logo=1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1'},
+  {name:'Capilla Santo Niño de Praga', client:'Espacio religioso', location:'Santiago, Nuevo León', type:'Recorrido 360°', kind:'tour', image:'/projects/capilla-santo-nino-de-praga.png', url:'https://kuula.co/share/collection/7D6jZ?logo=1&card=1&info=0&fs=1&vr=1&gyro=0&thumbs=3'}
 ];
 
 function Portfolio(){
