@@ -111,3 +111,22 @@
 
 .v-demo-figure{margin:0 0 75px!important}.v-demo{position:relative;isolation:isolate;overflow:hidden;border-radius:12px;background:#0b252c;aspect-ratio:2.35}.v-demo .v-demo-panorama{width:100%;height:100%;aspect-ratio:auto;object-fit:cover;display:block;border-radius:0}.v-demo:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(#04101495,transparent 28%,transparent 70%,#041014c9);z-index:0}.v-demo-top{position:absolute;top:22px;left:25px;right:25px;display:flex;justify-content:space-between;align-items:center;z-index:1;color:white;font-size:12px;letter-spacing:.13em}.v-demo-top small{display:block;font-size:8px;letter-spacing:.18em;margin-top:7px;color:#c3e5e9}.v-demo-360{display:flex;align-items:center;gap:10px;font-size:23px;letter-spacing:-.04em}.v-poi{position:absolute;z-index:2;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;border:0;background:none;padding:8px;color:white;font-family:inherit}.v-poi-dot{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:#062e3ddd;border:2px solid #9cf5ff;box-shadow:0 0 0 7px #00cbe82b,0 3px 14px #0006;transition:background .2s,transform .2s}.v-poi:hover .v-poi-dot,.v-poi.is-active .v-poi-dot{background:#00c8df;color:#05232c;transform:scale(1.1)}.v-poi:focus-visible{outline:3px solid #fff;outline-offset:4px;border-radius:8px}.v-poi-label{padding:5px 9px;border-radius:5px;background:#061a23df;font-size:11px;white-space:nowrap;box-shadow:0 2px 8px #0003}.v-demo-help{position:absolute;bottom:20px;left:25px;right:25px;display:flex;justify-content:space-between;gap:15px;z-index:1;font-size:10px;color:#e3f2f4}.v-demo-help span:first-child{display:flex;align-items:center;gap:8px}.v-poi-detail{display:flex;align-items:flex-start;justify-content:space-between;gap:25px;padding:25px 28px;background:#e5edef;border-left:3px solid #00a4c1;margin-top:14px;border-radius:4px}.v-poi-detail span{font-size:9px;letter-spacing:.16em;color:#007b91}.v-poi-detail h3{font-weight:500;font-size:24px;margin:10px 0}.v-poi-detail p{font-size:14px;line-height:1.7;color:#4b626a;max-width:700px;margin:0}.v-poi-detail button{border:0;background:none;padding:5px;cursor:pointer;color:#12343e}@media(max-width:600px){.v-demo{aspect-ratio:1.2;overflow:visible}.v-demo .v-demo-panorama{border-radius:10px;object-fit:fill}.v-demo:after{border-radius:10px}.v-demo-top{left:14px;right:14px;top:15px;font-size:9px}.v-demo-360{font-size:18px}.v-poi-dot{width:34px;height:34px;box-shadow:0 0 0 4px #00cbe82b}.v-poi-dot svg{width:17px}.v-poi-label{font-size:8px;padding:4px 5px;white-space:normal;max-width:86px}.v-demo-help{left:14px;right:14px;bottom:14px;font-size:9px}.v-demo-help span:last-child{display:none}.v-poi-detail{padding:20px}.v-demo-figure{margin-bottom:45px!important}}
 @media(max-width:600px){.v-demo{aspect-ratio:1.75}.v-demo .v-demo-panorama{object-fit:cover}.v-demo-top small{display:none}.v-demo-help{bottom:10px}}
+
+/* Optional project description, using the existing portfolio palette. */
+.portfolio-description{font-size:.9rem;line-height:1.7;color:#53666b;max-width:540px;margin:-.4rem 0 1.5rem}
+
+/* Recent Immersion Virtual project */
+.v-recent{padding:100px 6vw;background:#f5f6f1;color:var(--ink);border-top:1px solid #dce3e2;scroll-margin-top:24px}
+.v-recent>.eyebrow{color:#087b8d}
+.v-recent-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:6vw;align-items:center}
+.v-recent-image{display:block;overflow:hidden;border-radius:3px}
+.v-recent-image img{display:block;width:100%;height:auto;transition:transform .4s}
+.v-recent-image:hover img{transform:scale(1.025)}
+.v-recent-location{font-size:11px;letter-spacing:.16em;color:#087b8d}
+.v-recent-copy h2{font-size:clamp(42px,4.8vw,70px);line-height:1.07;margin-bottom:26px}
+.v-recent-copy>p:not(.v-recent-location){font-size:17px;line-height:1.8;color:#4d6066}
+.v-recent-copy .button{margin-top:14px}
+.v-recent a:focus-visible{outline:3px solid #008ba5;outline-offset:5px}
+@media(max-width:900px){.v-recent-grid{grid-template-columns:1fr;gap:35px}}
+@media(max-width:600px){.v-recent{padding:65px 25px}.v-recent-copy .button{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.v-recent-image img{transition:none}.v-recent-image:hover img{transform:none}}
